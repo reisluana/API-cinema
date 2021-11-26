@@ -1,0 +1,28 @@
+{
+  "name": "projetom4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reisluana/API-cinema.git"
+  },
+  "author": "Luana Reis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reisluana/API-cinema/issues"
+  },
+  "homepage": "https://github.com/reisluana/API-cinema#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
