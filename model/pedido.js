@@ -1,7 +1,7 @@
 var id = 0
 
 class Pedido {
-    constructor(comidas, bebidas, combos, valor, pagamento, array, idExistente){
+    constructor(cliente, comidas, bebidas, combos, valor, pagamento, array, idExistente){
         if(array){
             if(idExistente){
                 this.id = idExistente
@@ -10,6 +10,7 @@ class Pedido {
                 this.id = id++
             }
         }
+        this.cliente = cliente
         this.comidas = comidas
         this.bebidas = bebidas
         this.combos = combos 

@@ -3,6 +3,7 @@
 const express = require('express')
 const consign = require('consign')
 const sqlite3 = require('sqlite3')
+//const sqlite3 = require('./infra/sqlite-db')
 
 db = new sqlite3.Database(
     "./infra/database.db",

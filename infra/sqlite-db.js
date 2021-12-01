@@ -8,7 +8,7 @@ const bd = new sqlite3.Database(caminhoArq);
 
 process.on('SIGINT', () =>
     bd.close(() => {
-        console.log('BD encerrado!');
+        console.log('db encerrado!');
         process.exit(0);
     })
 );
