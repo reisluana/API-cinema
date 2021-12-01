@@ -2,7 +2,15 @@
 
 const express = require('express')
 const consign = require('consign')
-//const bodyParser = require('body-parser')
+const sqlite3 = require('sqlite3')
+
+db = new sqlite3.Database(
+    "./infra/database.db",
+    sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE,
+    function () {
+      console.log("db aberto");
+    }
+);
 
 module.exports = () => {
     const app = express()

@@ -7,4 +7,8 @@ module.exports = app => {
         console.log(req.body)
         res.send('você está na rota da bomboniere e está realizando um POST')
     })
+
+    app.patch('/bomboniere/:id', (req, res) => {
+        
+    })
 }
